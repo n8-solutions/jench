@@ -1,5 +1,14 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: 'https://ton-user-github.github.io/ton-repo/', // Remplace ici
+  vite: {
+    server: {
+      fs: {
+        strict: true,
+      },
+    },
+  },
+  output: 'static'
+});
+
