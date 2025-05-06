@@ -1,3 +1,7 @@
+# JCT Studio
+
+JCT Studio Website using Astro and custom CMS for easy update
+
 # Astro Starter Kit: Minimal
 
 ```sh
