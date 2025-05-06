@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://ton-user-github.github.io/ton-repo/', // Remplace ici
+  site: 'https://n8-solutions.github.io/jench/',
+  base: '/jench/',
   vite: {
     server: {
       fs: {

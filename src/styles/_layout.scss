@@ -2,13 +2,15 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
-  background-color: orange;
+  background-color: light-grey;
 }
 
-
 header {
+  margin: 120px 450px 450px;
   text-align: center;
-  margin-top: $spacing-md;
+  //margin-top: $spacing-md;
+  background-color: red;
+  height: 100px;
 }
 
 .logo {
@@ -17,7 +19,22 @@ header {
 }
 
 main {
-  padding-top: 80px;
-  #padding: $spacing-md;
+  margin: 120px 450px 450px;
+  background-color: orange;
+  color: black;
+  height: 1540px;
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  //padding: 1rem;
+  //margin-top: 50px;
+  z-index: 1000;
+}
