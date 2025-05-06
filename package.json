@@ -6,12 +6,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy": "gh-pages -d dist",
     "astro": "astro"
   },
   "dependencies": {
     "astro": "^5.7.10"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.87.0"
   }
 }
