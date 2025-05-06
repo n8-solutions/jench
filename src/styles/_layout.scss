@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background-color: orange;
+}
+
+
+header {
+  text-align: center;
+  margin-top: $spacing-md;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+
+main {
+  padding-top: 80px;
+  #padding: $spacing-md;
+}
+

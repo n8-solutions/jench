@@ -1,0 +1,13 @@
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  #padding: 1rem;
+  margin-top: 80px;
+  z-index: 1000;
+}
