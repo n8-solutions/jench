@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .horizontal-scroll {
   display: flex;
   gap: $spacing-lg;
