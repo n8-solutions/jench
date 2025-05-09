@@ -7,17 +7,17 @@ body {
 }
 
 header {
-  margin-top: 40px;
-  background-color: red;
-  height: 100px;
-  width: 1300px;
+  margin-top: 3rem;
+  //background-color: red;
+  height: 7rem;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
 }
 
-.logo {
-  width: 600px;
-  background-color: green;
+.logo img {
+  width: 20rem;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
