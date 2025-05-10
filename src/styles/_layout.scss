@@ -7,11 +7,18 @@ body {
 }
 
 main {
-  margin: 5.1rem 28rem 28rem;
-  background-color: orange;
-  color: black;
-  height: 1540px;
-  width: 300px;
+  margin-top: 5.1rem;
+  //background-color: orange;
+  //color: black;
+  //height: 1540px;
+  //width: 19rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main img {
+  width: 43rem;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
