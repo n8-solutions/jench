@@ -1,0 +1,26 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; // image 1/3, texte 2/3
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 5rem auto;
+  align-items: center; // centre verticalement l’image et le texte
+}
+
+.about-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  //border-radius: 8px;
+}
+
+.about-text p{
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  letter-spacing: .02em;
+  line-height: 2.2em;
+  text-transform: none;
+  color: rgba(82,82,82,.6);
+}
