@@ -1,5 +1,7 @@
 header {
-  margin-top: clamp(1.3rem, 5.95vw, 12rem);
+  margin-top: clamp(1.3rem, 5.95vw, 7.6rem);
+  //margin-top: min(max(1rem, 4.9vw), 8rem);
+  // margin-top: max(4.9vw, 7.6rem);
   height: 4.5rem;
   width: 100vw;
   margin-left: auto;
