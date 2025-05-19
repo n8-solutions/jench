@@ -1,21 +1,49 @@
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; // image 1/3, texte 2/3
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 5rem auto;
-  align-items: center; // centre verticalement l’image et le texte
+.about-section {
+  padding: 0rem 5rem; // marge intérieure gauche/droite (mobile + desktop)
 }
 
-.about-grid img {
-  width: 100%;
-  height: auto;
-  display: block;
+.about-wrapper {
+  max-width: 1200px;       // ✅ largeur maximale du contenu
+  width: 100%;             // ✅ permet de s’adapter en dessous de 1200px
+  margin: 0 auto;          // ✅ centre horizontalement
+  padding: 0 2rem;         // ✅ garde un peu d'air sur petits écrans
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  //background-color: orange;
+}
+
+//.about-wrapper img {
+  //padding-top: 0.5rem;
+  //width: 100%;
+  //max-width: 300px;
+  //height: auto;
+  //display: block;
   //border-radius: 8px;
+//}
+
+.photo-wrapper {
+  height: 650px;              // ou une hauteur fixe si tu veux contrôler
+  //aspect-ratio: 3 / 4;       // ✅ maintient un ratio constant (par ex. portrait)
+  overflow: hidden;
+}
+
+.photo-wrapper img {
+  width: 110%;               // 👉 zoom horizontal
+  height: 100%;
+  object-fit: cover;         // ✅ crop automatiquement ce qui dépasse
+  object-position: right; // centre horizontalement (tu peux changer)
+  display: block;
+}
+
+
+.about-text p:first-of-type {
+  margin-top: 0;
 }
 
 .about-text p{
-  font-size: 1rem;
+  //font-size: 1rem;
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
