@@ -1,0 +1,28 @@
+// * {
+//   outline: 1px solid red;
+// }
+
+body {
+  //margin: 0;
+  font-family: 'Poppins', sans-serif;
+  // background-color: light-grey;
+  //background-color: lightblue;
+}
+
+.debug * {
+  outline: 1px solid rgba(255, 0, 0, 0.4);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(0px);
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
