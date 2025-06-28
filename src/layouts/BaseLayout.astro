@@ -8,8 +8,8 @@ import "../styles/main.scss";
     <title>JeanCharlesTomas Interior Design</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header  class="fade-in">
+  <body class="fade-in">
+    <header>
       <div class="logo">
         <a href="/jench/">
           <img src="/jench/JC-TOMAS-LOGO-BASELINE.jpg" alt="JeanCharlesTomas Interior Design" />
@@ -18,14 +18,14 @@ import "../styles/main.scss";
       
     </header>
     <nav class="menu fade-in">
-      <a href="/jench/">home</a>
-      <a href="/jench/projects/">projects</a>
-      <a href="/jench/press/">press</a>
-      <a href="/jench/about/">about</a>
+      <a href="/jench/" data-astro-prefetch="load">home</a>
+      <a href="/jench/projects/" data-astro-prefetch="load">projects</a>
+      <a href="/jench/press/" data-astro-prefetch="load">press</a>
+      <a href="/jench/about/" data-astro-prefetch="load">about</a>
     </nav>
-    <main>
+    <!-- <main> -->
       <slot />
-    </main>
+    <!-- </main> -->
     <footer>
       
     </footer>

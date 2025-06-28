@@ -1,0 +1,14 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout>
+  <main class="project-layout">
+    <div class="project-slider">
+      <section class="project-track">
+        <slot />
+      </section>
+    </div>
+  </main>
+  <script type="module" src="/jench/js/HorizontalScroll.js"></script>
+</BaseLayout>

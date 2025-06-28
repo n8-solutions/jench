@@ -1,53 +1,50 @@
+@use "variables.scss" as *;
+
 .about-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: $grid-gap-about;
   width: 100%;
   margin-inline: auto;
-}
 
-.photo-wrapper {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
+  @if $debug {
+    border: $border-debug-red;
+  }
 
-.photo-wrapper img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  object-position: center top;
-}
+  @media (max-width: 1920px) {
+    max-width: $max-width-about-1920;
+  }
 
-.about-text p:first-of-type {
-  margin-top: 0;
-}
-
-.about-text p{
-  width: 100%;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 13px;
-  letter-spacing: .02em;
-  line-height: 2.2em;
-  text-transform: none;
-  color: rgba(82,82,82,.6);
-  // background-color: green;;
-}
-
-@media (max-width: 1920px) {
-  .about-section {
-    margin-top: 6.5rem;
-    max-width: 1010px;
-    // background-color: orange;
+  @media (max-width: 960px) {
+    max-width: $max-width-about-960;
   }
 }
 
-@media (max-width: 960px) {
-  .about-section {
-   margin-top: 6.5rem;
-  //  background-color: pink;
-   max-width: 760px;
+.photo-wrapper {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    @if $debug {
+      border: $border-debug-orange;
+    }
+  }
+}
+
+.about-text {
+  @each $prop, $value in $text-about {
+    #{$prop}: #{$value};
+  }
+  @if $debug {
+    border: $border-debug-blue;
+  }
+
+  p:first-of-type {
+    margin-top: 0;
+    @if $debug {
+      border: $border-debug-blue;
+    }
   }
 }

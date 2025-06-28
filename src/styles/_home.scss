@@ -1,77 +1,26 @@
+@use "variables.scss" as *;
+
+
 .home-section {
-  // background-color: orange;
-  margin-top: 5.8rem;
-  //padding-inline: clamp(1rem, 8vw, 6rem); 
-  max-width: 60vw;
-  background-color: brown;
+  // max-width: $max-width-default;
   margin-inline: auto;
+
+  @media (max-width: 1920px) {
+    max-width: $max-width-1920;
+  }
+
+  @media (max-width: 960px) {
+    max-width: $max-width-960;
+  }
+
+  @if  $debug {
+    border: $border-debug-red;
+  }
 }
 
 .home-section img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-inline: auto;
-}
-
-@media (max-width: 1920px) {
-  .home-section {
-    margin-top: 5.7rem;
-    max-width: 840px;
+  @each $prop, $value in $img-home {
+    #{$prop}: #{$value};
   }
 }
 
-@media (max-width: 960px) {
-  .home-section {
-    max-width: 670px;
-  }
-}
-
-// .home-section {
-//   margin-inline: auto;
-//   max-width: 100%;
-//   background-color: brown;
-// }
-
-// // 2. conteneur de l'image
-// .home-image-wrapper {
-//   overflow: hidden;
-//   display: flex;
-//   justify-content: center;
-//   align-items: start;
-
-//   // comportement par défaut
-//   img {
-//     display: block;
-//     object-fit: cover;
-//     object-position: center top;
-//     transform: scale(1.1);        // ✅ effet de zoom
-//     transform-origin: center top;
-//     width: 100%;
-//     height: auto;
-//     max-width: 100%;
-//   }
-// }
-
-// // 3. contrôles fins avec media queries
-// @media (max-width: 960px) {
-//   .home-section {
-//     margin-inline: 24px; // ≈ 2.5cm
-//   }
-
-//   .home-image-wrapper img {
-//     max-width: 363px; // ≈ 9.6cm
-//     height: 646px;    // ≈ 17.1cm
-//   }
-// }
-
-// @media (min-width: 1920px) {
-//   .home-section {
-//     margin-inline: 446px; // ≈ 11.8cm
-//   }
-
-//   .home-image-wrapper img {
-//     max-width: 484px; // ≈ 12.8cm
-//     height: 862px;    // ≈ 22.8cm
-//   }
-// }
