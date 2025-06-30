@@ -1,10 +1,29 @@
 ---
-import Project_landing from "../layouts/Projects_landing.astro";
+import ProjectsLanding from "../layouts/ProjectsLanding.astro";
 ---
 
-<Project_landing>
-  
-      <a href="/jench/projects/caroubiers/"><img src="/jench/projects/Caroubiers/HD-Caroubiers-JeanCharlesTomas-01.jpg" ></a>
- 
-      <img src="/jench/projects/Caroubiers/HD-Caroubiers-JeanCharlesTomas-02.jpg" >
-</Project_landing>
+<ProjectsLanding>
+  <div class="projects-grid">
+    <a href="/jench/projects/caroubiers/" class="project-thumb">
+      <div class="project-thumbnail-wrapper">
+        <img src="/jench/projects/caroubiers/HD-Caroubiers-JeanCharlesTomas-01.jpg" alt="Les Caroubiers" />
+      </div>
+    </a>
+    <a href="/jench/projects/sanlorenzo/" class="project-thumb">
+      <div class="project-thumbnail-wrapper">
+        <img src="/jench/projects/sanlorenzo/JeanCharlesTomas-RG96-00.jpg" alt="Sanlorenzo" />
+      </div>
+    </a>
+    <a href="/jench/projects/stsulpice/" class="project-thumb">
+      <div class="project-thumbnail-wrapper">
+        <img src="/jench/projects/stsulpice/JeanCharlesTomas-interior-design-architecte-interieur-saint-sulpice-01.jpg" alt="Saint Sulpice" />
+      </div>
+    </a>
+    <a href="/jench/projects/cchotel/" class="project-thumb">
+      <div class="project-thumbnail-wrapper">
+        <img src="/jench/projects/cchotel/JeanCharlesTomas-CCH-01.jpg" alt="CC Hotel" />
+      </div>
+    </a>
+  </div>
+</ProjectsLanding>
+

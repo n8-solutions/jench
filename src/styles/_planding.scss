@@ -1,0 +1,41 @@
+@use "variables.scss" as *;
+
+.projects-landing {
+  padding: 2rem;
+  @if $debug {
+    border: $border-debug-red;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.project-thumb {
+  display: block;
+  text-decoration: none;
+
+  .project-thumbnail-wrapper {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4 / 3; // ✅ Ratio uniforme
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
