@@ -2,6 +2,7 @@
 
 .projects-landing {
   padding: 2rem;
+
   @if $debug {
     border: $border-debug-red;
   }
@@ -37,5 +38,9 @@
 
   &:hover img {
     transform: scale(1.05);
+  }
+
+  @if $debug {
+    border: $border-debug-green;
   }
 }
