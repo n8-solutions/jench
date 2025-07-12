@@ -45,7 +45,7 @@ $img-home: (
 // about
 $max-width-about-1920: 1010px; // max-width for about section on screens <= 1920px
 $max-width-about-960: 760px; // max-width for about section on screens
-$grid-gap-about: 2rem; // gap for grid in about section
+$grid-gap-about: 1rem; // gap for grid in about section
 
 $text-about: (
   width: 100%,
@@ -57,3 +57,7 @@ $text-about: (
   text-transform: none,
   color: $color-text,
 );
+
+// planding
+
+// project

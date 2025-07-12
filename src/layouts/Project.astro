@@ -3,12 +3,30 @@ import BaseLayout from "./BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <main class="project-layout">
-    <div class="project-slider">
-      <section class="project-track">
+  <main class="project">
+    <div class="slider-wrapper">
+      <div class="slider">
         <slot />
-      </section>
+      </div>
+    </div>
+    <div class="project-description">
+      <slot name="description" />
     </div>
   </main>
-  <script type="module" src="/jench/js/HorizontalScroll.js"></script>
+
+  <script type="module" is:inline>
+    const slider = document.querySelector(".slider-wrapper");
+    if (slider) {
+      slider.addEventListener(
+        "wheel",
+        (e) => {
+          if (e.deltaY !== 0) {
+            e.preventDefault();
+            slider.scrollLeft += e.deltaY * 3;
+          }
+        },
+        { passive: false }
+      );
+    }
+  </script>
 </BaseLayout>

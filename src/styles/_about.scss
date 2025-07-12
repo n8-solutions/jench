@@ -22,11 +22,11 @@
 
 .photo-wrapper {
   img {
-    width: 100%;
-    height: auto;
+    // width: 100%;
+    height: 560px;
     display: block;
-    object-fit: cover;
-    object-position: center top;
+    // object-fit: cover;
+    // object-position: center top;
     @if $debug {
       border: $border-debug-orange;
     }
